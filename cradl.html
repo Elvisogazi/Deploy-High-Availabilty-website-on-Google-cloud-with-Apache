@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cradle Hotel.</title>
+  <link rel="stylesheet" href="crd.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="site-header">
+
+    <div class="container">
+      <div class="logo"><img src="CRSAD.png" height="50px" width="120px"></div>
+
+       <!-- Hamburger -->
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <nav class="navbar" id="navbar">
+        <ul class="nav-links">
+          <li><a href="cradl.html">Home</a></li>
+          <li><a href="About.html">About us</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <a href="#" class="btn-cta">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+    
+
+  <section class="hero">
+    <div class="slider">
+      <div class="slide active" style="background-image: url('CRADL\ MB.jpg');"></div>
+      <div class="slide" style="background-image: url('500925047.jpg');"></div>
+      <div class="slide" style="background-image: url('house3.jpg');"></div>
+      <div class="hero-text">
+        <h1>Discover Extraordinary <br>Comfort</h1> 
+        <p>You are at cradl Home sweet <br> away from home!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section" id="about">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="rec.avif" alt="Hotel Interior" />
+      </div>
+      <div class="about-content">
+        <div class="thread-line"></div>
+        <h2>Welcome to CRADL Hotel</h2>
+        <p>
+          At CRADL, we blend elegance with comfort to give you a home-away-from-home experience. Whether you're visiting for business, leisure, or celebration, our spaces are designed to make every moment memorable. Discover premium hospitality, first-class service, and world-class facilities tailored to your needs.
+        </p>
+        <p>
+          From luxurious rooms and fine dining to professional conference halls and wedding venues, CRADL is your go-to destination in the heart of Owerri.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking-section" id="booking">
+    <div class="booking-card">
+      <h2>Book Your Stay</h2>
+      <form class="booking-form" action="#rooms">
+        <div class="form-group">
+          <label for="checkin">Check-in</label>
+          <input type="date" id="checkin" name="checkin" required>
+        </div>
+        <div class="form-group">
+          <label for="checkout">Check-out</label>
+          <input type="date" id="checkout" name="checkout" required>
+        </div>
+        <div class="form-group">
+          <label for="adults">Adults</label>
+          <select id="adults" name="adults">
+            <option value="1">1 Adult</option>
+            <option value="2" selected>2 Adults</option>
+            <option value="3">3 Adults</option>
+            <option value="4+">4+ Adults</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="kids">Kids</label>
+          <select id="kids" name="kids">
+            <option value="0" selected>0 Kids</option>
+            <option value="1">1 Kid</option>
+            <option value="2">2 Kids</option>
+            <option value="3+">3+ Kids</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-book">Book Room</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="features-section">
+    <div class="features-grid">
+      <!-- Room Card -->
+      <a href="rooms.html" class="feature-card room-card" style="background-image: url('500925047.jpg');">
+        <div class="overlay">
+          <h3>Rooms</h3>
+          <p>Luxury & comfort for every guest</p>
+        </div>
+      </a>
+  
+      <!-- Dining Card -->
+      <a href="About.html" class="feature-card" style="background-image: url('crd\ ding.jpg');">
+        <div class="overlay">
+          <h3>Dining</h3>
+        </div>
+      </a>
+  
+      <!-- Conference Card -->
+      <a href="#conference" class="feature-card" style="background-image: url('crdcon.jpg');">
+        <div class="overlay">
+          <h3>Conference & Meetings</h3>
+        </div>
+      </a>
+  
+      <!-- Services Card -->
+      <a href="#services" class="feature-card" style="background-image: url('facili.jpg');">
+        <div class="overlay">
+          <h3>Services & Facilities</h3>
+        </div>
+      </a>
+  
+      <!-- Wedding Card -->
+      <a href="#weddings" class="feature-card" style="background-image: url('wedding.jpg');">
+        <div class="overlay">
+          <h3>Wedding Package</h3>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="offers-section">
+    <div class="offers-header">
+      <h2>Best Offers of the Month</h2>
+      <p>Discover our top limited-time deals crafted to give you the most value and comfort.</p>
+    </div>
+    
+    <div class="offers-grid">
+      <!-- Offer 1 -->
+      <div class="offer-card">
+        <img src="coupl.jpg" alt="Couples Weekend">
+        <div class="offer-info">
+          <h3>Couples Weekend Getaway</h3>
+          <p>Enjoy a romantic 2-night stay with dinner and spa for two.</p>
+          <span class="badge">20% Off</span>
+        </div>
+      </div>
+  
+      <!-- Offer 2 -->
+      <div class="offer-card">
+        <img src="fam.jpg" alt="Family Package">
+        <div class="offer-info">
+          <h3>Family Fun Package</h3>
+          <p>Book a family suite and get complimentary breakfast for 4.</p>
+          <span class="badge">Limited Time</span>
+        </div>
+      </div>
+  
+      <!-- Offer 3 -->
+      <div class="offer-card">
+        <img src="crdcon.jpg" alt="Conference Deal">
+        <div class="offer-info">
+          <h3>Corporate Conference Deal</h3>
+          <p>Reserve our meeting rooms and get free coffee breaks for your team.</p>
+          <span class="badge">Save ₦50,000</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="CRSAD.png" alt="CRADL Logo" width="120" />
+        <p>Your sweet escape, always ready for your stay.</p>
+      </div>
+  
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#booking">Book</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>123 Palm Street, Owerri, Nigeria</p>
+        <p>Email: stay@cradlh.com</p>
+        <p>Phone: +234 800 123 4567</p>
+      </div>
+  
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><img src="facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="instagram.png" alt="Instagram" /></a>
+          <a href="#"><img src="twitter.png" alt="Twitter" /></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 CRADL Hotel. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('navbar');
+  
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');  // Animate into X
+      mobileNav.classList.toggle('show');    // Slide in/out menu
+    });
+  </script>
+
+
+</body>
+</html>

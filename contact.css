@@ -1,0 +1,365 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background: #fff;
+    color: #333;
+  }
+ 
+ /* Container */
+ .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Header */
+  .site-header {
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #d19600;
+    display: flex;
+    align-items: center;
+  }
+  
+   /* Desktop Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #d19600;
+  }
+  
+  .btn-cta {
+    padding: 10px 20px;
+    background-color: #d19600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-cta:hover {
+    background-color: #000000;
+  }
+  
+  /* HAMBURGER BASE STYLE */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    border-radius: 2px;
+  }
+ /* Hamburger Styles */
+ .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #d19600;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Responsive Nav */
+  @media (max-width: 768px) {
+
+    .container {
+        display: flex;
+        justify-content: space-between; /* pushes logo left, hamburger right */
+        align-items: center;
+        flex-direction: row; /* make sure it's horizontal */
+      }
+    
+      .navbar {
+        display: none; /* Hide nav by default */
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        background-color: #fff;
+        margin-top: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      }
+    
+      .navbar.show {
+        display: flex;
+      }
+    
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+      }
+    
+      .btn-cta {
+        width: 100%;
+        text-align: center;
+      }
+    
+    .hamburger {
+      display: flex;
+    }
+  
+    .navbar {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background: #ffffff;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px 0;
+      display: none;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+  
+    .navbar.show {
+      display: flex;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .btn-cta {
+      padding: 10px 25px;
+    }
+  }
+  /* DEFAULT: Desktop view (nav visible, hamburger hidden) */
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .hamburger {
+    display: none;
+  }
+  
+  /* MOBILE: Hamburger visible, nav hidden by default */
+  @media (max-width: 768px) {
+    .navbar {
+      display: none; /* hide nav on mobile initially */
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff;
+      padding: 20px 0;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+  
+    .navbar.show {
+      display: flex; /* show nav when hamburger is clicked */
+    }
+  
+    .hamburger {
+      display: flex; /* show hamburger on mobile only */
+      flex-direction: column;
+      gap: 6px;
+      cursor: pointer;
+    }
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+  }
+  .contact-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .contact-info {
+    flex: 1;
+  }
+  .contact-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  .contact-info p {
+    margin-bottom: 20px;
+    color: #555;
+  }
+  .contact-info ul {
+    list-style: none;
+  }
+  .contact-info li {
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    flex: 1;
+  }
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    resize: none;
+  }
+  .contact-form button {
+    padding: 12px;
+    background-color: #d19600;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .contact-form button:hover {
+    background-color: #2c3e50;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+    .contact-container {
+      flex-direction: column;
+      gap: 40px;
+    }
+    .contact-info h1 {
+      font-size: 2rem;
+    }
+    .contact-info p,
+    .contact-info li {
+      font-size: 0.95rem;
+    }
+    .btn-cta {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+   /* Footer */
+.site-footer {
+  background-color: #d19600;
+  color: #ffffff;
+  padding: 60px 20px 30px;
+  font-size: 0.95rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+.footer-brand img {
+  margin-bottom: 15px;
+}
+
+.footer-brand p {
+  color: #ffffff;
+}
+
+.footer-links h4,
+.footer-contact h4,
+.footer-social h4 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+
+
+.footer-links ul li a:hover {
+  color: #ffffff;
+}
+
+.footer-contact p {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 20px;
+  
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  color: #aaa;
+  font-size: 0.85rem;
+}
